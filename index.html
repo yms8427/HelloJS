@@ -1,0 +1,78 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello JavaScript</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <h3>Hoşgeldiniz</h3>
+    <button id="btn">Ekle</button>
+    <button id="btnAll">Tümünü Ekle</button>
+    <ul id="list"></ul>
+
+    <input type="text" id="txt" /><button id="btnRead">Oku</button>
+    <hr />
+
+    <div class="container">
+      <div class="flex-2">
+        <div class="group">
+          <label for="firstName">Adı</label>
+          <input
+            type="text"
+            class="control"
+            id="firstName"
+            autocomplete="off"
+          />
+        </div>
+        <div class="group">
+          <label for="lastName">Soyadı</label>
+          <input type="text" class="control" id="lastName" autocomplete="off" />
+        </div>
+        <div class="group">
+          <label for="gender">Cinsiyet</label>
+          <select id="gender" class="control">
+              <option value="-1">Seçiniz</option>
+
+              <option value="0">Erkek</option>
+              <option value="1">Kadın</option>
+          </select>
+        </div>
+        <div class="group">
+          <label for="birthDate">Doğum Tarihi</label>
+          <input
+            type="text"
+            class="control"
+            id="birthDate"
+            autocomplete="off"
+          />
+        </div>
+        <div class="group">
+          <label for="info">Kısa Bilgi</label>
+          <textarea id="info" class="control" autocomplete="off"></textarea>
+        </div>
+
+        <button class="btn accept" id="btnSave">Kaydet</button>
+        <button class="btn cancel" id="btnCancel">Temizle</button>
+      </div>
+      <div class="flex-3">
+        <h3>Kayıtlar</h3>
+        <div class="records">
+            
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/main.js"></script>
+  <script src="js/sample.js"></script>
+  <template id="cardTemplate">
+    <div class="card">
+        <img id="img" alt="User" />
+        <span class="info" id="fullName"></span>
+        <span class="info" id="birthDateSpan"></span>
+        <p id="description"></p>
+      </div>
+  </template>
+</html>
+
+<!-- Sınırlı sayıda kayıt alımı yap -->
